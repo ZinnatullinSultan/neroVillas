@@ -1,15 +1,35 @@
-@media (max-height: 825px) {
+@media (max-height: 850px) {
+  .form-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .form-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .form-container input[type='text'],
+  .form-container input[type='number'],
+  .form-container input[type='email'],
+  .form-container select {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .form-container button {
+    margin-top: 10px;
+  }
+}
+@media (max-height: 720px) {
   .form-container{
-    max-height: 600px;
+    max-height: 500px;
     overflow-y: scroll;
   }
   .form-container::-webkit-scrollbar {
     display: none;
   }
 }
-@media (max-height: 680px) {
+@media (max-height: 600px) {
   .form-container{
-    max-height: 480px;
+    max-height: 400px;
   }
 }
 @media (max-height: 535px) {
@@ -21,6 +41,16 @@
   }
   .hero__subtitle {
     margin-bottom: 4vh;
+  }
+}
+@media (max-height: 480px) {
+  .form-container{
+    max-height: 300px;
+  }
+}
+@media (max-height: 380px) {
+  .form-container{
+    max-height: 200px;
   }
 }
 @media (max-width: 1380px) {
@@ -240,27 +270,6 @@
   }
 }
 @media (max-width: 780px) {
-  .form-container h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .form-container label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  .form-container input[type='text'],
-  .form-container input[type='number'],
-  .form-container input[type='email'],
-  .form-container select {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .form-container button {
-    margin-top: 10px;
-  }
-  .form-container {
-    top: 15%;
-  }
   .faq__wrapper {
     flex-direction: column;
   }
