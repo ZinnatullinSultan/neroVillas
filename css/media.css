@@ -79,6 +79,9 @@
   .logo img{
     max-width: 60px;
   }
+  .hero{
+    height: calc(100vh - 64px);
+  }
   .main{
     padding-top: 64px;
   }

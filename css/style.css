@@ -249,7 +249,7 @@ input {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
-  padding: 250px 0 42px;
+  padding: 30vh 0 8vh;
 }
 
 .hero__title {
@@ -258,7 +258,7 @@ input {
   letter-spacing: 2px;
   line-height: 44px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 9vh;
   opacity: 0;
   animation: fadeInHero 1s ease-in-out forwards;
   animation-play-state: paused;
@@ -268,7 +268,7 @@ input {
   font-weight: 600;
   letter-spacing: 4px;
   line-height: 1.55;
-  margin-bottom: 140px;
+  margin-bottom: 12vh;
     opacity: 0;
   animation: fadeInHero 1s ease-in-out forwards;
   animation-play-state: paused;
