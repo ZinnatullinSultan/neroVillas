@@ -1107,3 +1107,87 @@ input[type='radio'] {
 .footer__policy:hover {
   font-weight: 600;
 }
+.faq {
+  margin-bottom: 157px;
+}
+.container--faq{
+  max-width: 1400px;
+}
+.faq__title {
+  font-size: 55px;
+    font-weight: 700;
+    line-height: 85px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards;
+  animation-play-state: paused;
+}
+.faq__wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.faq--other .container{
+  max-width: 1600px;
+}
+.faq--other .faq__item, .faq--other .faq__text{
+  max-width: none
+}
+.faq--other .faq__title{
+  text-align: center;
+  margin-top: 50px;
+}
+.faq__link{
+  font-size: 18px;
+  font-weight: 500;
+  color: blue;
+}
+.faq__item {
+  border-radius: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  max-width: 670px;
+}
+.faq__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.faq__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  max-width: 1219px;
+}
+.faq__text {
+  margin-top: 30px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  line-height: 120%;
+  max-width: 1219px;
+}
+.faq__text p, .faq__text ul{
+  margin-bottom: 20px;
+}
+.faq__text ul{
+  list-style: inside;
+}
+.faq__text h4{
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.faq__text--active {
+  display: block;
+}
+.faq__btn--active .faq__arrow {
+  transform: rotate(0deg);
+}
+.faq__arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}

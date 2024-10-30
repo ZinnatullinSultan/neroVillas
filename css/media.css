@@ -76,6 +76,12 @@
   .header__contacts--top {
     display: none;
   }
+  .logo img{
+    max-width: 60px;
+  }
+  .main{
+    padding-top: 64px;
+  }
   .nav{
     opacity: 0;
     visibility: hidden; /* Скрываем меню */
