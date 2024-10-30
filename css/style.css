@@ -332,7 +332,7 @@ input {
 }
 .hero__arr {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(0);
   animation: flash-md 2.5s linear infinite alternate;
