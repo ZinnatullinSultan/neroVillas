@@ -1,1 +1,55 @@
-const heroSection=document.querySelector(".hero"),images=["img/project-6-1.webp","img/project-5-1.webp","img/project-3-3.webp","img/project-4-1.webp"];let currentImageIndex=0;function changeBackgroundImage(){heroSection.classList.add("zoom-out"),setTimeout((()=>{currentImageIndex=(currentImageIndex+1)%images.length,heroSection.style.backgroundImage=`url(${images[currentImageIndex]})`,heroSection.classList.remove("zoom-out")}),800)}setInterval(changeBackgroundImage,5e3);const slidersData={"slider-1":["img/project-1-1.webp","img/project-1-2.webp","img/project-1-3.webp"],"slider-2":["img/project-2-1.webp","img/project-2-2.webp"],"slider-3":["img/project-3-1.webp","img/project-3-2.webp","img/project-3-3.webp"],"slider-4":["img/project-4-1.webp","img/project-4-2.webp"]};function initializeSlider(e,t){const r=document.querySelector(`#${e}`),i=r.querySelector(".prev-slide"),c=r.querySelector(".next-slide");let o=0;function n(){r.style.backgroundImage=`url(${t[o]})`}function l(){o=(o+1)%t.length,n(),g()}let a=setInterval(l,2500);function g(){clearInterval(a),a=setInterval(l,2500)}c.addEventListener("click",l),i.addEventListener("click",(function(){o=(o-1+t.length)%t.length,n(),g()})),n()}Object.keys(slidersData).forEach((e=>{initializeSlider(e,slidersData[e])}));
+const heroSection = document.querySelector('.hero'),
+  images = [
+    'img/project-6-1.webp',
+    'img/project-5-1.webp',
+    'img/project-3-3.webp',
+    'img/project-4-1.webp',
+  ];
+let currentImageIndex = 0;
+function changeBackgroundImage() {
+  heroSection.classList.add('zoom-out'),
+    setTimeout(() => {
+      (currentImageIndex = (currentImageIndex + 1) % images.length),
+        (heroSection.style.backgroundImage = `url(${images[currentImageIndex]})`),
+        heroSection.classList.remove('zoom-out');
+    }, 800);
+}
+setInterval(changeBackgroundImage, 5e3);
+function initializeSlider(sliderId, intervalTime = 3000) {
+  const slider = document.getElementById(sliderId);
+  const slides = slider.querySelectorAll(".slide");
+  const prevButton = slider.querySelector(".prev-slide");
+  const nextButton = slider.querySelector(".next-slide");
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) {
+        slide.classList.add("active");
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  prevButton.addEventListener("click", prevSlide);
+  nextButton.addEventListener("click", nextSlide);
+
+  setInterval(nextSlide, intervalTime);
+}
+
+// Инициализация нескольких слайдеров
+initializeSlider("slider-1");
+initializeSlider("slider-2");
+initializeSlider("slider-3");
+initializeSlider("slider-4");
