@@ -55,26 +55,33 @@
   </aside>
   <main class="main">
     <section class="hero">
-      <div class="hero__wrapper">
+      <div class="hero__slider">
+        <div class="hero__image" style="background-image: url('img/project-1-1.webp');"></div>
+        <div class="hero__image" style="background-image: url('img/project-2-1.webp');"></div>
+        <div class="hero__image" style="background-image: url('img/project-3-1.webp');"></div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
         <div class="container">
           <h1 class="hero__title">NeroVillas</h1>
           <h2 class="hero__subtitle">Дома с характером</h2><button class="hero__btn btn-form">Получить расчет <div
               class="btn__animation">
               <div class="btn__an"></div>
             </div></button>
-          <div class="hero__arr"><a href="#company-info" class="hero__anchor"><svg role="presentation"
-                class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px"
-                viewBox="0 0 38.417 18.592">
+          <div class="hero__arr">
+            <a href="#company-info" class="hero__anchor"><svg role="presentation" class="t-cover__arrow-svg"
+                style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592">
                 <g>
                   <path
                     d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
                   </path>
                 </g>
-              </svg></a></div>
+              </svg></a>
+          </div>
         </div>
       </div>
     </section>
-    <div class="company-info__right company-info__right--mobile">
+    <div class="company-info__right company-info__right--mobile" id="company-info--mobile">
       <div class="container container--mobile">
         <div class="overlay-text">
           <p><img src="img/g.webp" alt="icon1" />Гайнуллин А.З</p>
@@ -84,7 +91,7 @@
         </div><button class="company-info__btn btn-form">Получить консультацию </button>
       </div>
     </div>
-    <section class="company-info" id="company-info">
+    <section class="company-info">
       <div class="container">
         <div class="company-info__left">
           <p class="company-info__name">Nerovillas</p>
@@ -118,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="company-info__right">
+        <div class="company-info__right" id="company-info">
           <div class="overlay-text">
             <p><img src="img/g.webp" alt="icon1" />Гайнуллин А.З</p>
             <p><img src="img/s.webp" alt="icon2" />Салахов А.З</p>
@@ -247,18 +254,18 @@
             <img src="img/project-1-3.webp" class="slide" alt="Slide 3">
           </div>
           <div class="portfolio-controls"><button class="prev-slide">&lt;</button><button
-            class="next-slide">&gt;</button></div>
+              class="next-slide">&gt;</button></div>
         </div>
-        
+
         <div class="portfolio-slider" id="slider-2">
           <div class="slides">
             <img src="img/project-2-1.webp" class="slide active" alt="Slide 1">
             <img src="img/project-2-2.webp" class="slide" alt="Slide 2">
           </div>
           <div class="portfolio-controls"><button class="prev-slide">&lt;</button><button
-            class="next-slide">&gt;</button></div>
+              class="next-slide">&gt;</button></div>
         </div>
-        
+
         <div class="portfolio-slider" id="slider-3">
           <div class="slides">
             <img src="img/project-3-1.webp" class="slide active" alt="Slide 1">
@@ -266,7 +273,7 @@
             <img src="img/project-3-3.webp" class="slide" alt="Slide 3">
           </div>
           <div class="portfolio-controls"><button class="prev-slide">&lt;</button><button
-            class="next-slide">&gt;</button></div>
+              class="next-slide">&gt;</button></div>
         </div>
         <div class="portfolio-slider" id="slider-4">
           <div class="slides">
@@ -274,7 +281,7 @@
             <img src="img/project-4-2.webp" class="slide" alt="Slide 2">
           </div>
           <div class="portfolio-controls"><button class="prev-slide">&lt;</button><button
-            class="next-slide">&gt;</button></div>
+              class="next-slide">&gt;</button></div>
         </div>
       </div>
     </section>
@@ -554,6 +561,7 @@
     <div id="serverMessage"></div>
     </p>
   </div>
+  scr
   <script src="js/sliders.js"></script>
   <script src="js/main.js"></script>
   <script src="js/validation.js"></script>
