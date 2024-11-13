@@ -366,7 +366,7 @@ input {
   }
 }
 .company-info {
-  margin-bottom: 100px;
+  margin-bottom: 450px;
   position: relative;
 }
 .company-info__right {
@@ -374,7 +374,6 @@ input {
 }
 .company-info__left {
   display: flex;
-  gap: 20px;
   padding-top: 50px;
 }
 .company-info__name {
@@ -385,7 +384,7 @@ input {
   font-weight: 400;
   letter-spacing: 5px;
   color: #000;
-  margin-right: 50px;
+  margin-right: 10px;
   text-transform: uppercase;
 }
 .timeline__item {
@@ -421,11 +420,14 @@ input {
   position: absolute;
   top: 0;
   right: 0;
-  width: 30%;
+  width: 43%;
   background-color: #000;
-  padding: 40px;
+  padding: 25px;
   color: #fff;
   text-align: right;
+}
+.person__info{
+  text-align: left;
 }
 .company-info__right--mobile {
   display: none;
@@ -434,19 +436,21 @@ input {
   margin-bottom: 40px;
   text-align: center;
 }
-.container--mobile {
+/* .container--mobile {
   max-width: 400px;
-}
+} */
 .company-info__right--mobile .company-info__btn {
   margin: 0 auto;
 }
 .overlay-text {
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 14px;
+}
+.overlay-text ul{
+  margin-bottom: 20px;
+  text-align: left;
+  list-style: inside;
 }
 .overlay-text p {
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -456,6 +460,7 @@ input {
   max-width: 124px;
   max-height: 124px;
   margin-right: 10px;
+  float: left;
 }
 .company-info__image {
   width: 100%;
