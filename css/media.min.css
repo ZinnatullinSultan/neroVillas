@@ -77,6 +77,9 @@
     border-radius: 50%;
     opacity: 0.7;
   }
+  .objects .portfolio-controls button{
+    background-color: #fff;
+  }
 }
 @media (max-width: 1300px) {
   .menu {
@@ -391,6 +394,9 @@
   #quiz__grid-img-6 {
     margin-left: 42px;
   }
+  .team__text, .team__list {
+    font-size: 16px;
+  }
 }
 @media (max-width: 550px){
   .team__member{
@@ -473,7 +479,6 @@
   }
   .services__title {
     font-size: 33px;
-    line-height: 20px;
   }
   .item__title {
     font-size: 24px;

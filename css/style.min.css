@@ -422,9 +422,12 @@ input {
 .team__img-box img {
   width: 100%;
 }
-.team__text {
+.team__text, .team__list {
   font-size: 22px;
   font-weight: 400;
+}
+.team__list{
+  list-style: inside;
 }
 .team__members{
   display: flex;
@@ -438,6 +441,15 @@ input {
 }
 .team__member--second{
   margin-left: 40px;
+}
+.objects{
+  margin-bottom: 50px;
+}
+.objects .portfolio-controls button{
+  color: #000;
+}
+#obj-slider-1{
+  margin-bottom: 20px;
 }
 .services,
 #selection,
